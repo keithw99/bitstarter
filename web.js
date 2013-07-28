@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
-app.use('/public', express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 var fs = require('fs');
 
