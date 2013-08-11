@@ -84,11 +84,11 @@
       }
 
       /* Video pitch and Action */
-      .pitch {
+      .pitch{
         padding: 2.5% 0%;
       }
       .order {
-        padding: 2% 0%;
+       padding: 0% 0%;
       }
       .actions {
         background-color: #343434;
@@ -125,6 +125,9 @@
        width:180px;
        margin: 0 auto;
       }
+      /* .coinbase_button {
+       margin: 0 auto;
+      } */
     </style>
   </head>
   <body>
@@ -171,7 +174,7 @@
           <p class="lead">One sentence description.</p>
         </div>
       </div>
-      <div class="row-fluid pitch">
+      <div class="row-fluid pich">
         <div class="span5 offset1 video">
           <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
@@ -204,7 +207,7 @@
           <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+            <!-- http://twitter.github.io/bootstrap/omponents.html#progress -->
             <div class="thermometer progress active">
               <div class="bar bar-success" style="width: 60%;"></div>
               <div class="bar bar-warning" style="width: 40%;"></div>
@@ -212,14 +215,16 @@
           </div>
           </div>
           <div class="row-fluid">
-          <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div>
+            <div class="span6 offset3 order">
+              <!-- Standard Bootstrap button. -->
+              <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+              <a class="coinbase-button" data-code="a3b749306cc55429fef0f5c9071836ec" data-button-style="custom_small" data-button-text="Donate Bitcoins"  href="https://coinbase.com/checkouts/a3b749306cc55429fef0f5c9071836ec" data-width="161">Donate Bitcoins</a>
+	      <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+	      <!--    <button class="btn btn-success btn-large">Preorder</button> -->
+            </div>
           </div>
           <div class="row-fluid">
-          <div class="span8 offset2 social">
+            <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
 	    <!-- AddThis Button BEGIN -->
